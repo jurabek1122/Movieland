@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  background: rgb(45, 43, 46);
+  padding: 0 6%
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 90px;
+}
+.logo {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.search {
+  width: 180px;
+  height: 40px;
+  font-size: 18px;
+  padding: 0 50px;
+  background-color: rgb(45, 43, 46);
+  border: 1px solid white;
+  color: white;
+  border-radius: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input::placeholder {
+  color: white;
+}
+.icon {
+  position: absolute;
+  margin: 12px 20px;
+  color: white;
+}
+.home {
+  color: white;
+}
+.home button {
+  display: none;
+}
+.trailer-img {
+  width: 24rem;
+  height: 24rem;
+}
+.slide-card {
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0;
+}
+.slide-title {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+}
+.link {
+  text-decoration: none;
+  color: white; 
+  margin: 10px 20px;
+  padding: 7px 20px;
+  border-radius: 20px ;
+  font-weight: 500;
+  font-family: liner;
+  font-size: 20px;
+}
+.link.active {
+  border-bottom: 2px solid white;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.card {
+  width: 370px;
+  height: 250px;
+  margin: 10px;
+  position: relative;  
+}
+.card img {
+  width: 370px;
+  height: 250px; 
+}
+.card h4 {
+  position: absolute;
+  background-color: rgba(45, 43, 46, .6);
+  color: white;
+  z-index: 999;
+  left: 15px;
+  bottom: -10px;
+  padding: 10px;
+  border-radius: 17px;
+}
+.card h5 {
+  position: absolute;
+  background-color: rgba(45, 43, 46, .6);
+  color: white;
+  z-index: 999;
+  right: 15px;
+  top: -10px;
+  padding: 10px;
+  border-radius: 17px;
+}
+.genres {
+  text-align: center;
+}
+.genres button {
+  margin: 10px 30px;
+  padding: 5px 25px;
+  color: white;
+  background-color: rgb(45, 43, 46);
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.genres button.active {
+  color: rgb(45, 43, 46);
+  background-color: #fff;
+}
+.movie-info {
+  display: flex;
+  margin-left: 19%;
+  margin-top: 50px;
+  color: white;
+  font-weight: bold;
+}
+.infos {
+  margin-left: 50px;
+}
+.company {
+  display: flex;
+}
+.company-item {
+  margin: 0 10px 0 0;
+}
+.show-trailer {
+  text-decoration: none;
+  color: white;
+  margin-top: 35px;
+}
+.d-f {
+  display: flex;
+  justify-content: space-between;
+}
+.trailer {
+  width: 1000px !important;
+  height: 650px !important;
+}
+.movie {
+  color: white;
+}
+.back {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+}
+.backBtn {
+  width: 20px;
+  height: 20px;
+  margin-top: 40px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.trailerBtn {
+  cursor: pointer;
 }
